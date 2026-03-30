@@ -115,7 +115,14 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
   color: var(--text-1);
 }
 .btn--ghost:hover { border-color: var(--accent-1); color: var(--accent-1); transform: translateY(-2px); }
-.btn--full { width: 100%; justify-content: center; }
+.btn--full {  width: auto;
+  align-self: flex-start;
+  padding: 0.85rem 2.2rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  gap: 0.6rem;
+  box-shadow: 0 4px 24px rgba(56,189,248,0.25);
+  transition: var(--transition);}
 
 /* ─── NAV ────────────────────────────────────────── */
 .nav {
@@ -279,7 +286,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 .about__image-placeholder svg { width: 100px; }
 .about__badge {
   position: absolute;
-  bottom: 1.2rem; right: 1.2rem;
+  bottom: 0rem; right: 0rem;
   background: var(--accent-1);
   color: var(--bg-0);
   border-radius: 10px;
